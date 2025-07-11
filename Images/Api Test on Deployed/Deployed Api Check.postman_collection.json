@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "8e246dd0-24be-4869-8d46-4ebce3258098",
+		"name": "Deployed Api Check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34095962"
+	},
+	"item": [
+		{
+			"name": "Generate Short Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://www.google.com\",\r\n  \"expiryDate\": \"2025-07-13\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oro-assessments-url-shortner-production.up.railway.app/shorten",
+					"protocol": "https",
+					"host": [
+						"oro-assessments-url-shortner-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getting Original Long Url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oro-assessments-url-shortner-production.up.railway.app/OoRMZD",
+					"protocol": "https",
+					"host": [
+						"oro-assessments-url-shortner-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"OoRMZD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Click Count of Link",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oro-assessments-url-shortner-production.up.railway.app/stats/OoRMZD",
+					"protocol": "https",
+					"host": [
+						"oro-assessments-url-shortner-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"stats",
+						"OoRMZD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Url",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://oro-assessments-url-shortner-production.up.railway.app/Ldd8-Y",
+					"protocol": "https",
+					"host": [
+						"oro-assessments-url-shortner-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"Ldd8-Y"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Possible Error Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oro-assessments-url-shortner-production.up.railway.app/xyz",
+					"protocol": "https",
+					"host": [
+						"oro-assessments-url-shortner-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"xyz"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
